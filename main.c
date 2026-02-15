@@ -46,7 +46,7 @@ static double vdot(Vector3 a, Vector3 b) {
     return a.x*b.x + a.y*b.y + a.z*b.z; 
 }
 
-// Länge (Norm) eines Vektors
+// Länge eines Vektors
 static double vlen(Vector3 a) { 
     return sqrt(vdot(a,a)); 
 }
@@ -59,7 +59,7 @@ static Vector3 vnorm(Vector3 a) {
 }
 
 
-// Datenstruktur für Kugeln in der Szene
+// Datenstruktur für Kugeln
 typedef struct {
   Vector3 c;        // Mittelpunkt der Kugel
   float r;          // Radius
